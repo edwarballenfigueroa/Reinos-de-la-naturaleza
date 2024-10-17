@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el tamaño total */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fondo {
+    background-image: url('5Reinos\,jpng.jpg'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura del viewport */
+    position: relative; /* Para permitir la posición absoluta de otros elementos */
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Espacio entre los grupos de botones */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 20px; /* Espaciado horizontal */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.texto-central {
+    position: absolute; /* Posición absoluta para que esté en el centro sin afectar otros elementos */
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos el centro perfecto */
+    text-align: center; /* Centrar el contenido */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.boton-inicio {
+    display: inline-block; /* Para que el enlace se comporte como un botón */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    color: black; /* Color del texto */
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
+}
+
+.boton-inicio:hover {
+    background-color: rgba(255, 255, 255, 1); /* Cambio de color al pasar el mouse */
+}
+
+.botones {
+    display: flex; /* Para alinear los botones en fila */
+    flex-direction: column; /* Alinear los botones verticalmente */
+}
+
+.boton {
+    display: inline-block; /* Para que el enlace se comporte como un botón */
+    margin: 10px 0; /* Espaciado entre botones */
+}
+
+.boton img {
+    width: 200px; /* Ajusta el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.boton:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el mouse */
+}
+
+.videos {
+    display: flex; /* Para alinear los videos en fila */
+    flex-wrap: wrap; /* Permite que los videos se ajusten en múltiples filas */
+    justify-content: center; /* Centrar videos */
+}
+
+.videos iframe {
+    width: 300px; /* Ancho de los videos */
+    height: 200px; /* Alto de los videos */
+    margin: 10px; /* Espaciado entre videos */
+}

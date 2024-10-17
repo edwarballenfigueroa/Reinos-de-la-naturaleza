@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.fondo {
+    background-image: url('animal1.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.contenido {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Solo el texto está centrado */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.boton-inicio, .boton-actividad {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.boton-inicio:hover, .boton-actividad:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.imagenes {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start; /* Alinea las imágenes a la izquierda */
+}
+
+.imagenes img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.videos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start; /* Alinea los videos a la izquierda */
+}
+
+.videos iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+
+.actividad {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar solo la actividad */
+}
+
+.encuesta {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar la encuesta */
+    width: 100%; /* La encuesta ocupará todo el ancho */
+}
+
+.encuesta iframe {
+    border: none;
+}
